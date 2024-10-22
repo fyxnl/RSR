@@ -4,7 +4,7 @@
 This is the official PyTorch implementation of CID
 ## Abstract:
 Restoring images in haze scenes is a challenging
-but widely concerned topic in computer vision. The mainstream learning-based approaches primarily obtain the enhanced model by relying on the distribution of training data from the specific scenes, causing poor generalization (even invalid) when
+but widely concerned topic in computer vision. The mainstream learning-based approaches primarily obtain the enhanced model by relying on the distribution of training data from the specific scenes, causing poor generalization (even invalid) when
 encountering previously unseen real-world hazy images. The
 main obstacle lies in the domain migration conundrums caused
 by the distribution differences across different hazy scenarios.
@@ -12,7 +12,7 @@ To address this issue, we first explore the visual and physical
 properties between haze scenes through statistical analysis and
 construct a multi-domain haze data generation pipeline that
 encapsulates multiple degradation factors (e.g., haze, low-light,
-noise, color cast, etc.) to bridge the distribution gap between synthetic data and real haze scenes. Next, we introduce the domain
+noise, color cast, etc.) to bridge the distribution gap between synthetic data and real haze scenes. Next, we introduce the domain
 adaptive learning paradigm to model the above problem from the
 perspective of subspace domain alignment and domain invariant
 feature learning. The pre-trained semi-supervised framework is
