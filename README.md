@@ -48,7 +48,7 @@ practical values for the proposed method.
 
 ## Pretrained Weights & Dataset
 
-1. Download [Dehaze weights](https://pan.baidu.com/s/1VaYI8VJLN_yTRmY-_H8lOA) and Extraction code: [4hrr]
+1. Download [Dehaze weights](https://pan.baidu.com/s/1N5DuuqQEyAUtk8Ec6tLCpw?pwd=tib6) and Extraction code: tib6]
 2. Load the pre-trained weights [Res2Net](https://pan.baidu.com/s/14JAHqX0xvFTpGXAqVBqMCQ) and Extraction code: [1234]
 3. Our training data will be released once it's sorted out. Data layer generalization can be achieved with our data.
 ![](USfigure/6.png). 
