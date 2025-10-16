@@ -1,7 +1,7 @@
  
 # Towards Real-World Scene Recovery: Benchmark and Method
 
-This is the official PyTorch implementation of CID
+This is the official PyTorch implementation of RSR
 ## Abstract:
 Restoring images in haze scenes is a challenging
 but widely concerned topic in computer vision. The mainstream learning-based approaches primarily obtain the enhanced model by relying on the distribution of training data from the specific scenes, causing poor generalization (even invalid) when
