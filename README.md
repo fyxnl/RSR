@@ -3,34 +3,9 @@
 
 This is the official PyTorch implementation of RSR
 ## Abstract:
-Restoring images in haze scenes is a challenging
-but widely concerned topic in computer vision. The mainstream learning-based approaches primarily obtain the enhanced model by relying on the distribution of training data from the specific scenes, causing poor generalization (even invalid) when
-encountering previously unseen real-world hazy images. The
-main obstacle lies in the domain migration conundrums caused
-by the distribution differences across different hazy scenarios.
-To address this issue, we first explore the visual and physical
-properties between haze scenes through statistical analysis and
-construct a multi-domain haze data generation pipeline that
-encapsulates multiple degradation factors (e.g., haze, low-light,
-noise, color cast, etc.) to bridge the distribution gap between synthetic data and real haze scenes. Next, we introduce the domain
-adaptive learning paradigm to model the above problem from the
-perspective of subspace domain alignment and domain invariant
-feature learning. The pre-trained semi-supervised framework is
-designed to endow the encoder with scene-independent generality
-towards different scenarios (i.e., freezing the encoder in the
-adaptation and testing phases). Further, in the unsupervised
-training phase, we establish the second-order statistical feature
-covariance alignment strategy to reduce the feature distance
-between the source domain and target domain data in the
-transformed subspace. And, in the supervised training stage, we
-remove the spurious correlation between features by learning the
-weights of the source domain sample data in the representation
-space, so as to obtain domain invariant features. Finally, plenty
-of experiments and ablation studies on multiple challenging real
-haze data indicate our method’s superiority in image quality and
-scenario adaptability against existing state-of-the-art methods.
-Applications on vehicle object detection also reveal the latent
-practical values for the proposed method.
+Restoring images in haze and sandstorm scenes is a challenging but widely concerned topic in computer vision. The mainstream learning-based approaches primarily obtain the enhanced model by relying on the distribution of training data from the specific scenes, causing poor generalization when encountering previously unseen real-world degraded images.
+The primary difficulty stems from the domain gap caused by diverse real-world degradation factors (e.g., haze, low light, noise, color cast), which are often absent in previous synthetic haze and sandstorm data. To bridge this gap, we first conduct statistical analysis of visual and physical properties across various real haze and sandstorm scenes and construct a multi-domain data generation pipeline that simulates representative conditions such as daytime haze, nighttime haze, and dusty weather. This allows our model to learn from richer degradation patterns and better generalize across scenes.
+We then introduce a two-stage domain adaptation paradigm that models the domain shift via subspace domain alignment and domain-invariant feature learning. In the first supervised phase, we remove the spurious correlation between features by learning the weights of the source domain sample data in the representation space, so as to obtain domain invariant features. In the second unsupervised phase, we align second-order feature statistics to minimize domain discrepancy in the transformed subspace. Finally, extensive experiments and ablation studies on multiple challenging haze and sandstorm data indicate our method's superiority in image quality and scenario adaptability against existing state-of-the-art methods. Applications on vehicle object detection also reveal the latent practical values for the proposed method. 
 
 ![](Fig/1.png)
 ## Environment:
