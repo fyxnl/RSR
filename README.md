@@ -1,5 +1,5 @@
  
-# Towards Cross-scene Image Dehazing via Multi-domain Data Generation and Adaptation
+# Towards Real-World Scene Recovery: Benchmark and Method
 
 This is the official PyTorch implementation of CID
 ## Abstract:
